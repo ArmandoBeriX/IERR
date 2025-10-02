@@ -1,0 +1,70 @@
+/* src/components/UI/IconButton/IconButton.css */
+.icon-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #007bff;
+  color: white;
+}
+
+.icon-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.icon-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Variantes */
+.icon-btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.icon-btn-primary:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.icon-btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.icon-btn-secondary:hover:not(:disabled) {
+  background: #545b62;
+}
+
+.icon-btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.icon-btn-success:hover:not(:disabled) {
+  background: #218838;
+}
+
+/* Tamaños */
+.icon-btn-small {
+  padding: 6px;
+  font-size: 0.875rem;
+}
+
+.icon-btn-medium {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.icon-btn-large {
+  padding: 12px;
+  font-size: 1.125rem;
+}
+
+.icon-btn.active {
+  background: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25);
+}
